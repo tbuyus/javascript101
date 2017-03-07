@@ -3,7 +3,7 @@ Website for the javascript101 meetup Bristol
 
 ## Getting Started
 ```
-git clone https://github.com/Nat47/javascript101.git
+git clone https://github.com/CodeHubOrg/javascript101.git
 ```
 
 ## How to contribute
