@@ -5,6 +5,7 @@ Website for the javascript101 meetup Bristol
 ```
 git clone https://github.com/CodeHubOrg/javascript101.git
 ```
+We use a .editorconfig file to everyone maintain adherence to our styleguide. Please download the relevant plugin for your editor of choice here: [editorconfig.org](editorconfig.org)
 
 ## How to contribute
 [How to use git](https://javascript101.gitbooks.io/guide/content/version_control.html)  
