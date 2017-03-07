@@ -14,4 +14,4 @@ git clone https://github.com/Nat47/javascript101.git
 Click on the pull request menu item on the github page and follow the instructions.
 
 ## Help!
-If you need any help just ask the group on our (gitter channel)[https://gitter.im/CodeHubOrg/discussions]
+If you need any help just ask the group on our [gitter channel](https://gitter.im/CodeHubOrg/discussions)
