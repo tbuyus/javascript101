@@ -7,7 +7,7 @@ git clone https://github.com/Nat47/javascript101.git
 ```
 
 ## How to contribute
-[How to use git](https://javascript101.gitbooks.io/guide/content/version_control.html)
+[How to use git](https://javascript101.gitbooks.io/guide/content/version_control.html)  
 [How to make pull request](https://docs.google.com/presentation/d/12XPsgBkarJLA6I1UJd7HK1izUpQfX2Lt2gQq91z9XNQ/edit#slide=id.p)
 
 ## How to merge a pull request
