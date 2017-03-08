@@ -33,6 +33,10 @@ $.ajax({
     $('#about').append('<p>Venue: '+nextEvent.venue.name+', ' + nextEvent.venue.city + '</p>')
     $('#about').append(nextEvent.description)
     $('#about').append('<br><a href="'+nextEvent.event_url+'" target="_blank" id="next-event">Join the next event on Meet up</a>')
+
+    setInterval(function() {
+      $('#next-event').toggleClass('hidden')
+    }, 700)
   },
   error: function (xhr, status) {
     var eventUrl = 'https://www.meetup.com/CodeHub-Bristol/events/'
