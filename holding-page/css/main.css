@@ -2,7 +2,7 @@ body {
   background: #000;
 }
 
-body > h1 {
+body > marquee {
   position: absolute;
   top: 20%;
   font-family: 'Conv_PressStart2P-Regular', Fallback, verdana;
