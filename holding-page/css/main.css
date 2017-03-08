@@ -1,10 +1,19 @@
 body {
   background: #000;
+  color: #0F0;
+  font-family: 'Conv_PressStart2P-Regular', Fallback, verdana;
+  line-height: 1.5;
 }
 
 body > marquee {
   position: absolute;
   top: 20%;
-  font-family: 'Conv_PressStart2P-Regular', Fallback, verdana;
-  color: #0F0;
+}
+
+a {
+  color: #F00;
+}
+
+#cheezburger {
+  margin: 0, auto;
 }
