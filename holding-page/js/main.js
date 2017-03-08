@@ -31,10 +31,15 @@ function renderLoadingScreen() {
   // animateLoader()
 
   function renderTitle() {
+    var show = true
     var LOADING_MSG = 'Loading Awesomes'
     var titleElement = document.createElement('h1')
     titleElement.innerHTML = LOADING_MSG
     rootElement.appendChild(titleElement)
+    // setInterval(function() {
+    //   show = !show
+    //   titleElement.className = show ? '' : 'hidden'
+    // }, 700)
   }
 
   function renderLoader() {
@@ -55,12 +60,6 @@ function renderLoadingScreen() {
       }
     }, interval)
   }
-}
-
-function loadingTitle() {
-  var titleElement = document.createElement('h1')
-  titleElement.innerHTML = 'Loading Awesomes'
-  return titleElement
 }
 
 // var MEETUP_API_URL = 'https://api.meetup.com/2/events?&sign=true&photo-host=public&group_urlname=CodeHub-Bristol&page=20'

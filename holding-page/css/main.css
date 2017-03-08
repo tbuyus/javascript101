@@ -26,6 +26,8 @@ a {
   border: 5px solid #0F0;
   height: 20px;
   width: 500px;
+  position: absolute;;
+  top: 80px;
 }
 
 #loader #block {
