@@ -15,9 +15,22 @@ a {
 }
 
 .hidden {
-  display: none;  
+  display: none;
 }
 
 #cheezburger {
   margin: 0, auto;
+}
+
+#loader {
+  border: 5px solid #0F0;
+  height: 20px;
+  width: 500px;
+}
+
+#loader #block {
+  background-color: #0F0;
+  height: 20px;
+  width: 0px;
+  display: block;
 }
