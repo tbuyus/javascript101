@@ -1,5 +1,10 @@
+body {
+  background: #000;
+}
+
 body > h1 {
   position: absolute;
   top: 20%;
   font-family: 'Conv_PressStart2P-Regular', Fallback, verdana;
+  color: #0F0;
 }
