@@ -1,0 +1,16 @@
+{
+  "name": "javascript-101",
+  "version": "1.0.0",
+  "description": "Javascript 101 website",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js 0.0.0.0",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "js101",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "pug": "^2.0.0-beta11"
+  }
+}

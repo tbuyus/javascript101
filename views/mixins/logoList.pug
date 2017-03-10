@@ -1,0 +1,10 @@
+mixin logo(logo)
+    li
+      a(href=logo.url)
+        img(src=logo.src, alt=logo.alt)
+
+mixin logoList(logoList)
+  div.logos
+    ul
+      for logo in logoList
+        +logo(logo)
