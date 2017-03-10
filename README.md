@@ -28,8 +28,6 @@ We use a `.editorconfig` file to help everyone maintain adherence to our stylegu
 Pug templates (formerly know as Jade) and express have been added to the project.  
 You can either edit your html files in the public folder as before or create pug templates in the view folder.  
 [How to use Pug](https://www.sitepoint.com/jade-tutorial-for-beginners/)
-## How to merge a pull request
-Click on the pull request menu item on the github page and follow the instructions.
 
 ## Help!
 If you need any help just ask the group on our [gitter channel](https://gitter.im/CodeHubOrg/discussions)
