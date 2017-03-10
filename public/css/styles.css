@@ -1,3 +1,9 @@
+/* Main styles
+-------------------------------------------------- */
+.main {
+  padding: 40px 15px;
+  text-align: center;
+}
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
@@ -14,15 +20,18 @@ body {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 100px;
+  padding: 20px 0;
   background-color: #f5f5f5;
 }
 /* Logo styles
 -------------------------------------------------- */
-#logos ul {
+.logos ul {
   list-style: none;
-  max-width: 680px
+  max-width: 680px;
+  margin: 60px auto;
+  padding: 0px
 }
-#logos ul > li {
+.logos ul > li {
   display: inline-block;
   /* You can also add some margins here to make it look prettier */
   zoom:1;
