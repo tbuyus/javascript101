@@ -25,7 +25,7 @@ We use a `.editorconfig` file to help everyone maintain adherence to our stylegu
 ## Templating
 >Pug is an elegant templating engine, primarily used for server-side templating in NodeJS. In plain words, Pug gives you a powerful new way to write markup, with a number of advantages over plain HTML.
 
-Pug templates (formerly know as Jade) and express have been added to the project.  
+The project is now using Pug templates (formerly know as Jade) and express.  
 You can either edit your html files in the public folder as before or create pug templates in the view folder.  
 [How to use Pug](https://www.sitepoint.com/jade-tutorial-for-beginners/)
 
