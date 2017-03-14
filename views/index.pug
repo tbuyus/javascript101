@@ -2,9 +2,10 @@ extends layout.pug
 include mixins/logoList.pug
 
 block content
-  .container
-    .row
-      h1= title
-      p= message
-    .row
-      +logoList(logoList)
+  .home
+    .container
+      .row
+        h1= title
+        p= message
+      .row
+        +logoList(logoList)

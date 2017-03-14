@@ -1,8 +1,12 @@
 /* Main styles
 -------------------------------------------------- */
-.main {
+.home {
   padding: 40px 15px;
   text-align: center;
+}
+.main {
+  padding: 0px 15px;
+  margin-bottom: 140px;
 }
 /* Logo styles
 -------------------------------------------------- */
