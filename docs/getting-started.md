@@ -1,7 +1,7 @@
 # Getting Started
 
 ## Group Chat
-We use [Gitter](https://gitter.im) as a group chat to discuss JavaScript, [Projects](projects.html) and share useful [Resources](resources.html). Create a [github](https://github.com/) account and [join in](https://gitter.im/CodeHubOrg/discussions)!
+We use [Gitter](https://gitter.im) to discuss JavaScript, [Projects](projects.html) and share useful [Resources](resources.html). Create a [github](https://github.com/) account and [join in](https://gitter.im/CodeHubOrg/discussions)!
 
 ## Books
 If you are new to JavaScript [Eloquent Javascript](http://eloquentjavascript.net/) is an excellent introduction to JavaScript with online exercises.  
