@@ -1,7 +1,7 @@
 var path = require('path')
 var fs = require('fs')
 var marked = require('marked')
-var REPO_URL = 'https://github.com/CodeHubOrg/javascript101/'
+var REPO_URL = 'https://github.com/CodeHubOrg/javascript101/blob/master/docs/'
 
 var render = function(filename, res) {
   var file = path.join(__dirname, '../docs' ,filename)
