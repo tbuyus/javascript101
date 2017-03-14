@@ -8,7 +8,7 @@ app.use(express.static('public'))
 
 app.get('/', function (req, res) {
   res.render('index', {
-    title: 'Welcome to Javascript 101',
+    title: 'Welcome to JavaScript 101',
     message: 'We are a JavaScript meetup group in Bristol, UK.',
     logoList: logoList
   })
