@@ -3,9 +3,14 @@ include mixins/logoList.pug
 
 block content
   .home
-    .container
+    .container-fluid
       .row
         h1= title
         p= message
+        div.actions
+          a(class='btn btn-primary' href='/getting-started') Get Started
+          a(class='btn btn-primary' href='https://www.meetup.com/CodeHub-Bristol/') Meetup
+          a(class='btn btn-primary' href='/resources.html') Resources
+    .container-fluid
       .row
         +logoList(logoList)

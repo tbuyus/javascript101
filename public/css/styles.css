@@ -4,6 +4,12 @@
   padding: 40px 15px;
   text-align: center;
 }
+.home p {
+  font-size: 24px;
+}
+.home .actions a {
+  margin: 20px 5px;
+}
 .main {
   padding: 0px 15px;
   margin-bottom: 140px;
