@@ -38,7 +38,7 @@ var logoList = [
   {
     title: "JavaScript",
     url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/",
-    src: "/img/logo/js.jpg",
+    src: "/img/logo/js.png",
     alt: "JavaScript"
   },
   {
