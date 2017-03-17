@@ -29,5 +29,10 @@ The project is now using Pug templates (formerly know as Jade) and express.
 You can either edit your html files in the public folder as before or create pug templates in the view folder.  
 [How to use Pug](https://www.sitepoint.com/jade-tutorial-for-beginners/)
 
+You can also add content as [mark down](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) files in the docs folder and add a route in ```routes.js```.  See the getting started page as an example.  This is a great way to allow the community to contribute content.
+
+## Progressive Web Application
+This app has a [web app manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest), which allows you to install the project as a web app on your mobile home screen.
+
 ## Help!
 If you need any help just ask the group on our [gitter channel](https://gitter.im/CodeHubOrg/discussions)
