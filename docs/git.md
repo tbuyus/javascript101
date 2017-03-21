@@ -139,6 +139,21 @@ Read [Git Book Pro](https://git-scm.com/book/en/v2), it's free and awesome.
 ## Github Help
 [Help on github](https://help.github.com/)
 
+## Exercises
+Now that you know the git basics, lets put them into practise with the following exercises:
+
+### Managing Your code
+1. Create a portfolio repo on your github account and push simple html home page to it.
+2. Create a 'dev' branch, make some changes, merge into master and push to github.
+3. (Optional) When ready publish your porfolio to the world on [github pages](https://pages.github.com/).
+
+### Pull Requests
+1. Fork our [git playground project](https://github.com/CodeHubOrg/git-playground)
+2. Create an 'upstream' remote to the CodeHubOrg git playground project
+3. Create a new branch for your work.
+4. Update the hall of fame with your name.
+5. Create a pull request.
+
 ## Useful links
 @todo Please add useful links here.
 
