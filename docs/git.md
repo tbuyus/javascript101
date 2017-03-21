@@ -149,9 +149,10 @@ Now that you know the git basics, lets put them into practise with the following
 
 ### Pull Requests
 1. Fork our [git playground project](https://github.com/CodeHubOrg/git-playground).
-2. Update the hall of fame with your name.
-3. Create a pull request.
-4. Update your github with the changes.
+2. Add something awesome, anything is awesome!
+3. Update the hall of fame with your name.
+4. Create a pull request.
+5. Update your github with the changes.
 
 ## Useful links
 @todo Please add useful links here.
