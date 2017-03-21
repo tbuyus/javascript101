@@ -19,7 +19,7 @@ Website for the javascript101 meetup Bristol
 We use a `.editorconfig` file to help everyone maintain adherence to our styleguide. This file tells your code editor to use certain default settings for this project. Please download the relevant plugin for your editor of choice here: [editorconfig.org](http://editorconfig.org/#download)
 
 ## How to contribute
-[How to use git](https://github.com/CodeHubOrg/javascript101/blob/master/docs/git.md)
+[How to use git](https://github.com/CodeHubOrg/javascript101/blob/master/docs/git.md)  
 [How to make pull request](https://docs.google.com/presentation/d/12XPsgBkarJLA6I1UJd7HK1izUpQfX2Lt2gQq91z9XNQ/edit#slide=id.p)
 
 ## Templating
