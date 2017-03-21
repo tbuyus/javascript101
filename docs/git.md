@@ -171,3 +171,11 @@ git merge branch - merge branch into current one
 git diff [commit ref 1] [commit ref 2] - show difference between commits
 git rebase - Rewrite time!  (becareful!)
 ```
+
+## Advanced Topics
+### Git Hooks
+Git hooks are useful for deploying code to servers and other tasks.
+[Read more](https://www.digitalocean.com/community/tutorials/how-to-use-git-hooks-to-automate-development-and-deployment-tasks)
+### Rewriting History
+Git can be used to rewrite time, but becareful!
+[Read more](https://www.atlassian.com/git/tutorials/rewriting-history)
