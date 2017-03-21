@@ -148,13 +148,10 @@ Now that you know the git basics, lets put them into practise with the following
 3. (Optional) When ready publish your porfolio to the world on [github pages](https://pages.github.com/).
 
 ### Pull Requests
-1. Fork our [git playground project](https://github.com/CodeHubOrg/git-playground)
-2. Create an 'upstream' remote to the CodeHubOrg git playground project
-3. Create a new branch for your work.
-4. Update the hall of fame with your name.
-5. Create a pull request.
-6. Pull from upstream to make sure you have the latest changes.
-7. Update your github with the changes.
+1. Fork our [git playground project](https://github.com/CodeHubOrg/git-playground).
+2. Update the hall of fame with your name.
+3. Create a pull request.
+4. Update your github with the changes.
 
 ## Useful links
 @todo Please add useful links here.
