@@ -153,6 +153,8 @@ Now that you know the git basics, lets put them into practise with the following
 3. Create a new branch for your work.
 4. Update the hall of fame with your name.
 5. Create a pull request.
+6. Pull from upstream to make sure you have the latest changes.
+7. Update your github with the changes.
 
 ## Useful links
 @todo Please add useful links here.
