@@ -129,12 +129,16 @@ Sometimes you might get conflicts where you and another person has made changes 
 
 [How to Write a Git Commit Message](http://chris.beams.io/posts/git-commit/)
 
+## Can I use Git from my browser?
+You can use github to edit files or use [glitch](https://glitch.com/) for pair programming.
+
 ## Read Git Book Pro
 
 Read [Git Book Pro](https://git-scm.com/book/en/v2), it's free and awesome.
 
 ## Github Help
 [Help on github](https://help.github.com/)
+
 
 ## Useful commands
 
