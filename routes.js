@@ -15,4 +15,8 @@ router.get('/getting-started', function (req, res) {
   doc.render('getting-started.md', res)
 })
 
+router.get('/about', function (req, res) {
+  doc.render('about.md', res)
+})
+
 module.exports = router
