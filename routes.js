@@ -15,6 +15,10 @@ router.get('/getting-started', function (req, res) {
   doc.render('getting-started.md', res)
 })
 
+router.get('/getting-started/git', function (req, res) {
+  doc.render('git.md', res)
+})
+
 router.get('/about', function (req, res) {
   doc.render('about.md', res)
 })
