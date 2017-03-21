@@ -139,6 +139,8 @@ Read [Git Book Pro](https://git-scm.com/book/en/v2), it's free and awesome.
 ## Github Help
 [Help on github](https://help.github.com/)
 
+## Useful links
+@todo Please add useful links here.
 
 ## Useful commands
 
