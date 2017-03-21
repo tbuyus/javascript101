@@ -49,7 +49,7 @@ Source control allows you to manage versions of your code and contribute to proj
 npm install -g git-it
 git-it
 ```
-In order to contribute to a project you should learn [how to make a pull request](https://docs.google.com/presentation/d/12XPsgBkarJLA6I1UJd7HK1izUpQfX2Lt2gQq91z9XNQ/edit#slide=id.p).
+In order to contribute to a project you should learn [how to use git](/getting-started/git) and [how to make a pull request](https://docs.google.com/presentation/d/12XPsgBkarJLA6I1UJd7HK1izUpQfX2Lt2gQq91z9XNQ/edit#slide=id.p).
 
 ## Further Resources
 It's particularly important with Javascipt to make sure the resources you're using are up to date... a resource that's just a couple of years old can be way out of date; Javascript frameworks and methods are evolving rapidly.

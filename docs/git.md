@@ -4,19 +4,23 @@
 
 Git is similar to other version control systems (VCS) such as Subversion, and CVS.
 
-A repository (repo for short) is where git stores this information.  You could think of it like a local server that stores your code.
+A repository (repo for short) is where git stores this information.  You can think of it like a local server that stores your code.
 
-Whereas the previously VCS's have a central repo, git is a [distributed system](http://stackoverflow.com/questions/7212740/why-git-is-called-a-distributed-source-control-system).  This means that can have repo on your local computer and can save to it regardless of internet connection.  Also if one copy of your repo is lost, as long as there is another copy else where you should be able to get back most of your work.
-
-## History
-It was created by Linus Trovalds the same person who created Linux.  Originally he was using Bitkeeper for source control, how ever free use was withdrawn after a dispute. He quips that he named it after himself.
->"I'm an egotistical bastard, and I name all my projects after myself. First 'Linux', now 'git'."
+Whereas the previously VCS's have a central repo, git is a [distributed system](http://stackoverflow.com/questions/7212740/why-git-is-called-a-distributed-source-control-system).  This means that you have repo on your local computer and can save to it regardless of internet connection.  Also if one copy of your repo is lost, as long as there is a copy of the repo else where you should be able to get back most of your work.
 
 ## What is Github?
-Github is a place to store repos in the cloud.  It allows you to share code and work on projects with other developers.  It's important to save or push your project changes to github just in case your dog eats your laptop and you loose your local repo.
+>GitHub is a development platform inspired by the way you work. Host code, manage projects, and build software alongside millions of other developers.
+
+Github can be thought of as a remote server to store your code.  It allows you to share code and work on projects with other developers.  
 
 ## Why should I use Git?
-What would you do if you spent hours on a project and then your dog ate your code?  I bet you wish you had a back up, well this is where git comes in useful.  Github also is the ideal way for to work on your awesome project with a friend.
+What would you do if you spent hours on a project and then your dog ate your code?  
+How could you easily work on your awesome project with a friend?  
+
+Git is the answer!
+
+## History
+It was created by Linus Torvalds the same person who created Linux.  Originally he was using Bitkeeper for source control, how ever decided to make his own VCS after free use was withdrawn after a dispute.
 
 ## How do I get started with Git?
 First install git by entering the following command or follow these [instructions](https://www.atlassian.com/git/tutorials/install-git) if you're not using Linux.
@@ -49,6 +53,11 @@ Saving your code is known as 'commiting'.  To do so takes two steps:
 1. Add to staging area
 2. Commit changes with a message
 
+Check to see which files have been changed:
+```
+git status -s
+```
+
 To add specific files to the staging area:
 ```
 git add [files]
@@ -57,22 +66,64 @@ To add all files to the staging area:
 ```
 git add .
 ```
-Note make sure you add any new files this way.
-To commit files with a message:
-```
-git commit [files] -m 'Add new awesome feature'
-```
-## Branches are cheap!
+Note make sure you add any new files this way otherwise changes will not be commited as the files will be untracked.
 
-Branches are cheap so use them!  For example if you want to play about with a new feature or do a bug fix.
+To add and commit all changed files with a message:
+```
+git commit [files] -am 'Add new awesome feature'
+```
+Note that the command above add and commits at the sametime using the '-am' parameters.
 
+
+Check your commit by viewing the log
+```
+git log
+```
+
+
+## Branching
+A branch is basically a fork of your own code.  It's useful for creating a new feature or doing a bug fix.  The main project branch is called main.
+To list your branches:
+```
+git branch
+```
+To switch to a branch:
+```
+git checkout [branch-name]
+```
+To list your branches:
+```
+git branch
+```
+To list remote branches:
+```
+git branch -r
+```
+## How to update your project
+To update your github project with the lastest commits made by you:
+```
+git push origin [branch name]
+```
+If you are contributing to another project you can update your local project with their latest changes by:
+```
+git pull upstream [branch name]
+```
+## Remotes
+If you are contributing to a project you need to add it as a remote (eg upstream in previous example) so that you can pull changes.
+```
+git remote add [remote name eg upstream] [repo clone url]
+```
 ## Config
-
-The git config file is found in your project folder ./git/config
-
+The git config file is useful for checking your remotes
+```
+cat .git/config
+```
 ## Pull Requests
 
 [How to make pull requests](https://docs.google.com/presentation/d/12XPsgBkarJLA6I1UJd7HK1izUpQfX2Lt2gQq91z9XNQ/edit?usp=sharing)
+
+## Conflicts
+Sometimes you might get conflicts where you and another person has made changes to the same peice of code.  You can either manually resolve the conflict or use a merge tool.  @todo...
 
 ## How to Write a Git Commit Message
 
@@ -81,6 +132,9 @@ The git config file is found in your project folder ./git/config
 ## Read Git Book Pro
 
 Read [Git Book Pro](https://git-scm.com/book/en/v2), it's free and awesome.
+
+## Github Help
+[Help on github](https://help.github.com/)
 
 ## Useful commands
 
