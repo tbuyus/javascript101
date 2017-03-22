@@ -149,17 +149,19 @@ Read [Git Book Pro](https://git-scm.com/book/en/v2), it's free and awesome.
 
 ## Useful commands
 ```
-git log - show log
-git status -s - show working directory status
-git checkout [branch] - check out a branch
-git checkout -b [branch] - make a new branch based on current branch
-git add . - add all files
-git add -u - add deleted files
-git commit -am "[commit message]" - add and commit with message
-git push [remote] [branch] - push changes to remote (typicall called origin) and branch name (main branch is called master)
-git merge branch - merge branch into current one
-git diff [commit ref 1] [commit ref 2] - show difference between commits
-git rebase - Rewrite time!  (becareful!)
+| Term | Definition |
+| ------ | ------ |
+|git log | show log |
+|git status -s | show working directory status |
+|git checkout [branch] | check out a branch |
+|git checkout -b [branch] | make a new branch based on current branch |
+|git add . | add all files |
+|git add -u | add deleted files |
+|git commit -am "[commit message]" | add and commit with message |
+|git push [remote] [branch] | push changes to remote (typicall called origin) and branch name (main branch is called master) |
+|git merge branch | merge branch into current one |
+|git diff [commit ref 1] [commit ref 2] | show difference between commits |
+|git rebase | Rewrite time!  (becareful!) |
 ```
 
 ## Glossary
@@ -168,11 +170,12 @@ git rebase - Rewrite time!  (becareful!)
 |Repository | where git stores your project versioning information |
 |Fork | copy a repository to your github |
 |Clone | copy a repository to your machine |
+|Checkout| open a branch in your working directory |
 |Branch | project fork / feature / version |
 |Add | add files to staging area |
 |Staging | the area you add files before a commit |
 |Commit | save |
 |Remote | name of remote server (default is origin) |
 |Push | send your changes a remote server |
-|Pull |get updates from a remote server | 
+|Pull |get updates from a remote server |
 @todo more...
