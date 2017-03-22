@@ -1,7 +1,6 @@
 /* Main styles
 -------------------------------------------------- */
 .home {
-  padding: 40px 15px;
   text-align: center;
 }
 .home p {
@@ -13,6 +12,21 @@
 .main {
   padding: 0px 15px;
   margin-bottom: 140px;
+}
+.row {
+  padding: 40px 0;
+}
+.poll {
+  text-align: left;
+}
+.poll input[type="checkbox"] {
+  margin-right: 10px;
+}
+.gallery img {
+  width: 100%;
+}
+.wonderland a {
+  margin: 0 10px;
 }
 /* Logo styles
 -------------------------------------------------- */
