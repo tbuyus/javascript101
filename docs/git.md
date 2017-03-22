@@ -25,7 +25,7 @@ Github can be thought of as a remote server to store your code.  It allows you t
 Git is the solution!
 
 ## History
-Git created by Linus Torvalds the same person who created Linux after Bitkeeper withdrew free use of their source control system.  Why he called it Git, who knows?  
+Linus Torvalds creator of Linux made Git after a dispute with Bitkeeper who withdrew free use of their source control system.  Why he called it Git, who knows?  
 
 ## How do I get started with Git?
 First install git by entering the following command or follow these [instructions](https://www.atlassian.com/git/tutorials/install-git) if you're not using Linux.
