@@ -148,8 +148,7 @@ Read [Git Book Pro](https://git-scm.com/book/en/v2), it's free and awesome.
 [Help on github](https://help.github.com/)
 
 ## Useful commands
-```
-| Term | Definition |
+| Command | Definition |
 | ------ | ------ |
 |git log | show log |
 |git status -s | show working directory status |
@@ -162,7 +161,6 @@ Read [Git Book Pro](https://git-scm.com/book/en/v2), it's free and awesome.
 |git merge branch | merge branch into current one |
 |git diff [commit ref 1] [commit ref 2] | show difference between commits |
 |git rebase | Rewrite time!  (becareful!) |
-```
 
 ## Glossary
 | Term | Definition |
