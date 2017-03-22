@@ -15,12 +15,14 @@ The benefits of a distributed system is that you can save your code locally rega
 
 Github can be thought of as a remote server to store your code.  It allows you to share code and work on projects with other developers.  
 
+@todo more github hype
+
 ## Why should I use Git?
 > Oh noes! The dog ate my codes!
 
 > I want to easily work on my awesome project with a friend!
 
-> I need to share my awesome project to help create World Peace!
+> I need to share my awesome project with the world to create peace!
 
 Git is the solution!
 
@@ -44,13 +46,15 @@ git commit -am 'Initial Commmit'
 Then create a repo on your github account and follow the instructions to push your changes.
 
 ## How to download a project's code from Github
-So you've seen a great project on github repository and you want to download a working copy and take a closer look. This is called 'cloning the repo'. Go to the repo github page click the 'clone or download' green button and copy the link. Then enter the following command:
+So you've seen an awesome project on github repository and you want to download a working copy and take a closer look. This is called 'cloning the repo'. Go to the repo github page click the 'clone or download' green button and copy the link. Then enter the following command:
 ```
 git clone [repo link]
 ```
 This will download the code to a new project directory, you can add a custom directory name as an additional parameter if you need to.
 
 ## How to contribute to another project on Github
+To get started working on another project you first need to fork the project on it's github page.  Then follow this presentation:
+
 [How to make a pull request](https://docs.google.com/presentation/d/12XPsgBkarJLA6I1UJd7HK1izUpQfX2Lt2gQq91z9XNQ/edit#slide=id.p)
 
 ## How to save code changes
@@ -159,14 +163,14 @@ git rebase - Rewrite time!  (becareful!)
 ```
 
 ## Glossary
-Repository - where git stores your project versioning information
-Fork - copy a repository to your github
-Clone - copy a repository to your machine
-Branch - project fork / feature / version
-Add - add files to staging area
-Staging - the area you add files before a commit
-Commit - save
-Remote - name of remote server (default is origin)
-Push - send your changes a remote server
-Pull - get updates from a remote server
-@todo
+Repository - where git stores your project versioning information  
+Fork - copy a repository to your github  
+Clone - copy a repository to your machine  
+Branch - project fork / feature / version  
+Add - add files to staging area  
+Staging - the area you add files before a commit  
+Commit - save  
+Remote - name of remote server (default is origin)  
+Push - send your changes a remote server  
+Pull - get updates from a remote server  
+@todo more...
