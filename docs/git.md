@@ -2,8 +2,6 @@
 ## What is Git?
 >The purpose of Git is to manage a project, or a set of files, as they change over time.  It also coordinates work on those files among multiple people.
 
-Git is similar to other version control systems (VCS) such as Subversion, and CVS.
-
 You store a project's code in a *repository*.  A *repository* (repo for short) is where git stores the information on your project versions.  You can think of it like a local server that stores your code.
 
 Git is a [distributed system](http://stackoverflow.com/questions/7212740/why-git-is-called-a-distributed-source-control-system).  This means that you can have the same repo stored in multiple locations.  You typically have a repo on your local computer and one on a remote server such as github.  You can also have what's called a bare repository on your production server for deployment.  If there are other people working on your project they will have a local copy of the repo on their machine as well.   
