@@ -139,7 +139,7 @@ Sometimes you might get conflicts where you and another person has made changes 
 [How to Write a Git Commit Message](http://chris.beams.io/posts/git-commit/)
 
 ## Open Source Contributions
-Git is a great way to ccontribute to open source projects.  You can view a projects issues on Github and make a fix as a pull request or start your own project.
+Git is a great way to contribute to open source projects.  You can view a projects issues on Github and make a fix as a pull request or start your own project.
 
 [Read more](http://www.developer.com/open/how-to-start-contributing-to-open-source.html)
 
