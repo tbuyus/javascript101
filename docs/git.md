@@ -4,23 +4,30 @@
 
 Git is similar to other version control systems (VCS) such as Subversion, and CVS.
 
-A repository (repo for short) is where git stores this information.  You can think of it like a local server that stores your code.
+You store a project's code in a *repository*.  A *repository* (repo for short) is where git stores the information on your project versions.  You can think of it like a local server that stores your code.
 
-Whereas the previously VCS's have a central repo, git is a [distributed system](http://stackoverflow.com/questions/7212740/why-git-is-called-a-distributed-source-control-system).  This means that you have repo on your local computer and can save to it regardless of internet connection.  Also if one copy of your repo is lost, as long as there is a copy of the repo else where you should be able to get back most of your work.
+Git is a [distributed system](http://stackoverflow.com/questions/7212740/why-git-is-called-a-distributed-source-control-system).  This means that you can have the same repo stored in multiple locations.  You typically have a repo on your local computer and one on a remote server such as github.  You can also have what's called a bare repository on your production server for deployment.  If there are other people working on your project they will have a local copy of the repo on their machine as well.   
+
+The benefits of a distributed system is that you can save your code locally regardless of internet connection, for example if you were flying on a plane.  You cannot do this with older VCS such as Subversion and CVS that have to connect to a remote server to save data.  Another useful feature is that if one copy of your repo is lost for example your machine dies, as long as there is a copy of the repo else where you should be able to get back most of your work.
 
 ## What is Github?
 >GitHub is a development platform inspired by the way you work. Host code, manage projects, and build software alongside millions of other developers.
 
 Github can be thought of as a remote server to store your code.  It allows you to share code and work on projects with other developers.  
 
-## Why should I use Git?
-What would you do if you spent hours on a project and then your dog ate your code?  
-How could you easily work on your awesome project with a friend?  
+@todo more github hype
 
-Git is the answer!
+## Why should I use Git?
+> Oh noes! The dog ate my codes!
+
+> I want to easily work on my awesome project with a friend!
+
+> I need to share my awesome project with the world to create peace!
+
+Git is the solution!
 
 ## History
-It was created by Linus Torvalds the same person who created Linux.  Originally he was using Bitkeeper for source control, how ever decided to make his own VCS after free use was withdrawn after a dispute.
+Git created by Linus Torvalds the same person who created Linux after Bitkeeper withdrew free use of their source control system.  Why he called it Git, who knows?  
 
 ## How do I get started with Git?
 First install git by entering the following command or follow these [instructions](https://www.atlassian.com/git/tutorials/install-git) if you're not using Linux.
@@ -39,17 +46,19 @@ git commit -am 'Initial Commmit'
 Then create a repo on your github account and follow the instructions to push your changes.
 
 ## How to download a project's code from Github
-So you've seen a great project on github repository and you want to download a working copy and take a closer look. This is called 'cloning the repo'. Go to the repo github page click the 'clone or download' green button and copy the link. Then enter the following command:
+So you've seen an awesome project on github repository and you want to download a working copy and take a closer look. This is called 'cloning the repo'. Go to the repo github page click the 'clone or download' green button and copy the link. Then enter the following command:
 ```
 git clone [repo link]
 ```
 This will download the code to a new project directory, you can add a custom directory name as an additional parameter if you need to.
 
 ## How to contribute to another project on Github
+To get started working on another project you first need to fork the project on it's github page.  Then follow this presentation:
+
 [How to make a pull request](https://docs.google.com/presentation/d/12XPsgBkarJLA6I1UJd7HK1izUpQfX2Lt2gQq91z9XNQ/edit#slide=id.p)
 
 ## How to save code changes
-Saving your code is known as 'commiting'.  To do so takes two steps:
+Saving your code is known as *commiting*.  To do so takes two steps:
 1. Add to staging area
 2. Commit changes with a message
 
@@ -110,6 +119,8 @@ git pull upstream [branch name]
 ```
 ## Remotes
 If you are contributing to a project you need to add it as a remote (eg upstream in previous example) so that you can pull changes.
+
+Github is named origin by default.
 ```
 git remote add [remote name eg upstream] [repo clone url]
 ```
@@ -129,9 +140,6 @@ Sometimes you might get conflicts where you and another person has made changes 
 
 [How to Write a Git Commit Message](http://chris.beams.io/posts/git-commit/)
 
-## Can I use Git from my browser?
-You can use github to edit files or use [glitch](https://glitch.com/) for pair programming.
-
 ## Read Git Book Pro
 
 Read [Git Book Pro](https://git-scm.com/book/en/v2), it's free and awesome.
@@ -139,25 +147,7 @@ Read [Git Book Pro](https://git-scm.com/book/en/v2), it's free and awesome.
 ## Github Help
 [Help on github](https://help.github.com/)
 
-## Exercises
-Now that you know the git basics, lets put them into practise with the following exercises:
-
-### Managing Your code
-1. Create a portfolio repo on your github account and push simple html home page to it.
-2. Create a 'dev' branch, make some changes, merge into master and push to github.
-3. (Optional) When ready publish your porfolio to the world on [github pages](https://pages.github.com/).
-
-### Pull Requests
-1. Fork our [git playground project](https://github.com/CodeHubOrg/git-playground).
-2. Update the hall of fame with your name.
-3. Create a pull request.
-4. Update your github with the changes.
-
-## Useful links
-@todo Please add useful links here.
-
 ## Useful commands
-
 ```
 git log - show log
 git status -s - show working directory status
@@ -172,10 +162,15 @@ git diff [commit ref 1] [commit ref 2] - show difference between commits
 git rebase - Rewrite time!  (becareful!)
 ```
 
-## Advanced Topics
-### Git Hooks
-Git hooks are useful for deploying code to servers and other tasks.
-[Read more](https://www.digitalocean.com/community/tutorials/how-to-use-git-hooks-to-automate-development-and-deployment-tasks)
-### Rewriting History
-Git can be used to rewrite time, but becareful!
-[Read more](https://www.atlassian.com/git/tutorials/rewriting-history)
+## Glossary
+Repository - where git stores your project versioning information  
+Fork - copy a repository to your github  
+Clone - copy a repository to your machine  
+Branch - project fork / feature / version  
+Add - add files to staging area  
+Staging - the area you add files before a commit  
+Commit - save  
+Remote - name of remote server (default is origin)  
+Push - send your changes a remote server  
+Pull - get updates from a remote server  
+@todo more...
