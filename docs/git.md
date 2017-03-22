@@ -163,14 +163,16 @@ git rebase - Rewrite time!  (becareful!)
 ```
 
 ## Glossary
-Repository - where git stores your project versioning information  
-Fork - copy a repository to your github  
-Clone - copy a repository to your machine  
-Branch - project fork / feature / version  
-Add - add files to staging area  
-Staging - the area you add files before a commit  
-Commit - save  
-Remote - name of remote server (default is origin)  
-Push - send your changes a remote server  
-Pull - get updates from a remote server  
+| Term | Definition |
+| ------ | ------ |
+|Repository | where git stores your project versioning information |
+|Fork | copy a repository to your github |
+|Clone | copy a repository to your machine |
+|Branch | project fork / feature / version |
+|Add | add files to staging area |
+|Staging | the area you add files before a commit |
+|Commit | save |
+|Remote | name of remote server (default is origin) |
+|Push | send your changes a remote server |
+|Pull |get updates from a remote server | 
 @todo more...
