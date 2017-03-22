@@ -140,6 +140,15 @@ Sometimes you might get conflicts where you and another person has made changes 
 
 [How to Write a Git Commit Message](http://chris.beams.io/posts/git-commit/)
 
+## Open Source Contributions
+Git is a great way to ccontribute to open source projects.  You can view a projects issues on Github and make a fix as a pull request or start your own project.
+
+[Read more](http://www.developer.com/open/how-to-start-contributing-to-open-source.html)
+
+## Private Repositories
+If your project is top secret you can store it privately for free on
+[bitbucket](https://bitbucket.org/) or [gitlab](https://about.gitlab.com/). Github also has a private option however it is limited to a year for free.
+
 ## Read Git Book Pro
 
 Read [Git Book Pro](https://git-scm.com/book/en/v2), it's free and awesome.
