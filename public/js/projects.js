@@ -10,7 +10,7 @@ const makeCard = (project) => {
   
   const {description, homepage, name: projName, html_url: repo} = project
   const desc = description === null ? 'No description found!' : description
-  const app = homepage || project.html_url
+  const app = homepage || repo
 
   const card = `<div class="col-sm-6 col-md-4 grid-item">
         <div class="thumbnail">
