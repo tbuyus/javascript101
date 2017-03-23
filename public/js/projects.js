@@ -8,15 +8,9 @@ const GITHUB_URL = 'https://github.com/CodeHubOrg'
  // project is an obj containing keys: projName, description, html_url, homepage plus others!
 const makeCard = (project) => { 
   
-  const {name, description, html_url, homepage} = project
-  const projName = name
-  const desc = description || 'No description found!'
+  const {description, homepage, name: projName, html_url: repo} = project
+  const desc = description === null ? 'No description found!' : description
   const app = homepage || project.html_url
-  const repo = html_url
-  // const projName = project.name
-  // const description = project.description || 'No Description found'
-  // const app = project.homepage || project.html_url
-  // const repo = project.html_url
 
   const card = `<div class="col-sm-6 col-md-4 grid-item">
         <div class="thumbnail">
