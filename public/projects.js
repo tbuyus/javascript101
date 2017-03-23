@@ -1,51 +1,116 @@
-const projectsUrl = 'https://api.github.com/users/CodeHubOrg/repos'
+/*
+Summary: Github API is called and list of all repos in the CodeHub are returned. Cards are created for each project repo and appended to the page
+*/
 
-const testApiResponse = [
-  {"name": "repo1", "description": "this is the description1", "html_url": "https://github.com/octocat/repo1", "homepage": "https://myApp.com"},
-  {"name": "repo2", "description": "this is the description2", "html_url": "https://github.com/octocat/repo2", "homepage": "https://myApp.com"},
-  {"name": "repo3", "description": "this is the description3", "html_url": "https://github.com/octocat/repo3", "homepage": "https://myApp.com"}
-  ]
+const projectsUrl = 'https://api.github.com/users/CodeHubOrg/repos'
+const github = 'https://github.com/CodeHubOrg'
+
+const testApiResponse = [{
+    "name": "repo1",
+    "description": "this is the description1",
+    "html_url": "https://github.com/octocat/repo1",
+    "homepage": "https://myApp.com"
+  },
+  {
+    "name": "repo2 - this has a very long title that causes wrapping",
+    "description": "this is the description2, it's much longer than the first one and that makes the box bigger. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa enim, dictum sed mi volutpat, pulvinar rhoncus dolor. Cras mollis, massa ut bibendum vestibulum, turpis magna imperdiet tortor, nec consectetur ante justo vel mi. Suspendisse a placerat dui, nec tristique erat. Morbi vel pretium nisi, vitae sagittis risus. Donec porta massa nec augue sodales, vel luctus nunc sagittis. ",
+    "html_url": "https://github.com/octocat/repo2",
+    "homepage": "https://myApp.com"
+  },
+  {
+    "name": "repo3 - this has a very long title that causes wrapping",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa enim, dictum sed mi volutpat, pulvinar rhoncus dolor. Cras mollis, massa ut bibendum vestibulum, turpis magna imperdiet tortor, nec consectetur ante justo vel mi. ",
+    "html_url": "https://github.com/octocat/repo2",
+    "homepage": "https://myApp.com"
+  },
+  {
+    "name": "repo4 - this has a very long title that causes wrapping",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa enim, dictum sed mi volutpat, pulvinar rhoncus dolor. Cras mollis, massa ut bibendum vestibulum, turpis magna imperdiet tortor, nec consectetur ante justo vel mi. Suspendisse a placerat dui, nec tristique erat. Morbi vel pretium nisi, vitae sagittis risus. Donec porta massa nec augue sodales, vel luctus nunc sagittis. ",
+    "html_url": "https://github.com/octocat/repo2",
+    "homepage": "https://myApp.com"
+  },
+  {
+    "name": "repo5 - this has a very long title that causes wrapping",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa enim, dictum sed mi volutpat, pulvinar rhoncus dolor. Cras mollis, massa ut bibendum vestibulum, turpis magna imperdiet tortor, nec consectetur ante justo vel mi. Suspendisse a placerat dui, nec tristique erat. Morbi vel pretium nisi, vitae sagittis risus. Donec porta massa nec augue sodales, vel luctus nunc sagittis. ",
+    "html_url": "https://github.com/octocat/repo2",
+    "homepage": "https://myApp.com"
+  },
+  {
+    "name": "repo6",
+    "description": "this is the description",
+    "html_url": "https://github.com/octocat/repo3",
+    "homepage": "https://myApp.com"
+  }
+]
 
 const makeCard = (projName, description, appUrl, homepage) => {
 
-  const card = `<div class="col-sm-6 col-md-4">
+  const desc = description || 'No Description found'
+  const home = homepage || github
+
+  const card = `<div class="col-sm-6 col-md-4 grid-item">
         <div class="thumbnail">
-          <img src="http://placehold.it/100x100" alt="proj-image">
           <div class="caption">
             <h3>${projName}</h3>
-            <p>${description}</p>
-            <p><a href=${appUrl} class="btn btn-default" role="button">App</a> <a href=${homepage} class="btn btn-default" role="button">Repo</a></p>
+            <p>${desc}</p>
+            <p><a href=${appUrl} class="btn btn-default" role="button">App</a> <a href=${home} class="btn btn-default" role="button">Repo</a></p>
           </div>
         </div>
       </div>`
-  
+
   return card
 }
 
 
 const appendCard = (card, locationToAppend) => {
-  locationToAppend.insertAdjacentHTML('beforeend', card) 
+  locationToAppend.insertAdjacentHTML('beforeend', card)
 }
-
-// making too many api calls.
-// fetch(projectsUrl)
-//   .then(function (response) {
-//     return response.json();
-//   })
-//   .then(function (json) {
-//     console.log(json)
-//     json.forEach(proj => console.log(proj.name))
-//   });
-
 
 
 document.addEventListener("DOMContentLoaded", function (event) {
 
+
+
+
   // cache DOM
   const appendLocation = document.querySelector('.row')
 
-  // append projects to page
-  testApiResponse.forEach( proj => appendCard( makeCard(proj.name, proj.description, proj.html_url, proj.homepage), appendLocation) )
-  
-})
+  // append projects to page - the fetch will go here and teh forEach inside the fetch.
+  // making too many api calls, so temporarily disabled this bit and using testApiResponse
+  fetch(projectsUrl)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (json) {
+      console.log(json)
+      json.forEach(proj => {
+        const card = makeCard(proj.name, proj.description, proj.html_url, proj.homepage)
+        appendCard(card, appendLocation)
 
+        // init Masonry - appears to have to be called after the above cards are appended to the DOM.
+        var grid = document.querySelector('.grid');
+        var msnry = new Masonry(grid, {
+          // options...
+          itemSelector: '.grid-item'
+        });
+
+      })
+    });
+
+/*
+  //for testing, to avoid hitting the github API, comment out the above fetch block completely and uncomment this whole block instead. It will use the testApiResponse var from the top of this file.
+  
+  testApiResponse.forEach(proj => {
+        const card = makeCard(proj.name, proj.description, proj.html_url, proj.homepage)
+        appendCard(card, appendLocation)
+      })
+
+  // init Masonry - appears to have to be called after the above cards are appended to the DOM.
+  var grid = document.querySelector('.grid');
+  var msnry = new Masonry( grid, {
+    // options...
+    itemSelector: '.grid-item'
+  });
+*/
+
+})

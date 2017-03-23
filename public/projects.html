@@ -12,6 +12,7 @@
   <title>Javascript 101 - About</title>
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"></script>
 
 </head>
 
@@ -43,7 +44,8 @@
 
 
   <div class="container">
-    <div class="row">
+<p>The projects listed here are pulled via the Github API.</p>
+    <div class="row grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
       
     </div>
   </div>
