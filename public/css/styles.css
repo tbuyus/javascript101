@@ -28,6 +28,11 @@
 .wonderland a {
   margin: 0 10px;
 }
+
+h3 {
+  margin-top: 0;
+}
+
 /* Logo styles
 -------------------------------------------------- */
 .logos ul {
