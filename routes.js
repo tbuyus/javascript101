@@ -23,4 +23,8 @@ router.get('/about', function (req, res) {
   doc.render('about.md', res)
 })
 
+router.get('/careers', function (req, res) {
+  doc.render('careers.md', res)
+})
+
 module.exports = router
