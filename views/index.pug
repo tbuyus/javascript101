@@ -1,5 +1,12 @@
 extends layout.pug
 include mixins/logoList.pug
+include mixins/randomQuote.pug
+
+//- script(src="../public/js/quotesInspiration.js") 
+
+- var module = require('../public/js/quotesInspiration.js')
+- var quotesInspiration = module.quotesInspiration
+
 
 block content
   .home
@@ -122,7 +129,9 @@ block content
           .panel.panel-primary
             .panel-heading
               h3.panel-title Inspiration
-            .panel-body Simplicity is the essence of happiness. - Cedric Bledso   
+            .panel-body 
+              +randomQuote(quotesInspiration) 
+               
             
         .col-lg-8.quote
           .panel.panel-primary
