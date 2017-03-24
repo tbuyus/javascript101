@@ -2,7 +2,9 @@
 
 Our group is great for either getting into a web development career or for progressing your existing career. We use current industry standard software (mostly open source) and techniques and work together collaboratively using Git in exactly the same way as is used in a work-based commercial environment.
 
-## Some of the technologies and tools we use when working on projects together:
+## Our Tech Stack
+
+Some of the technologies and tools we use when working on projects together:
 
 - Javascript including ES6
 - HTML5
