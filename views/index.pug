@@ -6,11 +6,9 @@ block content
     .container-fluid
       .row
         h1= title
-        p= message
+        p(class="lead")= message
         div.actions
-          a(class='btn btn-primary' href='/getting-started') Get Started
-          a(class='btn btn-primary' href='https://www.meetup.com/CodeHub-Bristol/') Meetup
-          a(class='btn btn-primary' href='/resources.html') Resources
-    .container-fluid
+          p #[a(href='/getting-started') Get Started], join us at a #[a(href='https://www.meetup.com/CodeHub-Bristol/') Meetup] or simply check out some of our #[a(href='/resources.html') Resources]  
+    .container-fluid.jumbotron
       .row
         +logoList(logoList)

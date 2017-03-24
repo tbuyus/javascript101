@@ -5,8 +5,8 @@ var doc = require('./utils/doc')
 
 router.get('/', function (req, res) {
   res.render('index', {
-    title: 'Welcome to JavaScript 101',
-    message: 'We are a JavaScript meetup group in Bristol, UK.',
+    title: 'JavaScript 101',
+    message: 'We are a meetup group in Bristol, UK.',
     logoList: logoList
   })
 })
