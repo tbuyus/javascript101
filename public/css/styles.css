@@ -4,10 +4,10 @@
   text-align: center;
 }
 .home p {
-  font-size: 24px;
+
 }
 .home .actions a {
-  margin: 20px 5px;
+
 }
 .main {
   padding: 0px 15px;
@@ -32,19 +32,26 @@
 h3 {
   margin-top: 0;
 }
+.home .actions p{
+
+}
+.jumbotron {
+  background-color: #fff;
+}
 
 /* Logo styles
 -------------------------------------------------- */
 .logos ul {
   list-style: none;
-  max-width: 680px;
+  padding: 0;
+ /* max-width: 680px;
   margin: 60px auto;
-  padding: 0px
+  padding: 0px*/
 }
 .logos ul > li {
-  display: inline-block;
+ /* display: inline-block;
   zoom:1;
-  *display:inline;
+  *display:inline;*/
 }
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -55,6 +62,8 @@ html {
 body {
   /* Margin bottom by footer height */
   margin: 60px 0;
+
+
 }
 .footer {
   position: absolute;
