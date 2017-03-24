@@ -2,12 +2,6 @@ extends layout.pug
 include mixins/logoList.pug
 include mixins/randomQuote.pug
 
-//- script(src="../public/js/quotesInspiration.js") 
-
-- var module = require('../public/js/quotesInspiration.js')
-- var quotesInspiration = module.quotesInspiration
-
-
 block content
   .home
     .container-fluid
@@ -130,9 +124,10 @@ block content
             .panel-heading
               h3.panel-title Inspiration
             .panel-body 
-              +randomQuote(quotesInspiration) 
+              +randomQuote(['When there is no desire, all things are at peace. - Laozi', 'Simplicity is the ultimate sophistication. - Leonardo da Vinci', 'Simplicity is the essence of happiness. - Cedric Bledsoe']) 
+              +randomQuote(quotesInspiration)
+
                
-            
         .col-lg-8.quote
           .panel.panel-primary
             .panel-heading

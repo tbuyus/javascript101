@@ -2,12 +2,14 @@ var express = require('express')
 var router = express.Router()
 var logoList = require('./model/logo')
 var doc = require('./utils/doc')
+var quotesInspiration = require('./public/js/quotesInspiration')
 
 router.get('/', function (req, res) {
   res.render('index', {
     title: 'Welcome to JavaScript 101',
     message: 'We are a JavaScript meetup group in Bristol, UK.',
-    logoList: logoList
+    logoList: logoList,
+    quotesInspiration: quotesInspiration
   })
 })
 

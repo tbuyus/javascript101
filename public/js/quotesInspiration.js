@@ -13,4 +13,4 @@ var quotesInspiration = [
 ]
 
 
-exports.quotesInspiration = quotesInspiration;
+module.exports = quotesInspiration;
