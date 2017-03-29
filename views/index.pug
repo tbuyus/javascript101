@@ -1,12 +1,13 @@
 extends layout.pug
 include mixins/logoList.pug
+include mixins/randomQuote.pug
 
 block content
   .home
     .container-fluid
       .row
         h1= title
-        p= message
+        p(class="lead")= message
         div.actions
           a(class='btn btn-primary btn-lg' href='/getting-started') Get Started
           a(class='btn btn-danger btn-lg' href='https://www.meetup.com/CodeHub-Bristol/') Meetup
@@ -122,19 +123,23 @@ block content
           .panel.panel-primary
             .panel-heading
               h3.panel-title Inspiration
-            .panel-body Simplicity is the essence of happiness. - Cedric Bledso   
-            
+            .panel-body 
+              +randomQuote(quotesInspiration) 
+
+               
         .col-lg-8.quote
           .panel.panel-primary
             .panel-heading
               h3.panel-title God Father
-            .panel-body Douglas Crockford finds bugs in John Resig's code. Every. Single. Day.
+            .panel-body 
+              +randomQuote(quotesCrockford)
             
         .col-lg-8.quote
           .panel.panel-primary
             .panel-heading
               h3.panel-title Funsies
-            .panel-body How do you comfort a JavaScript bug? - You console it  
+            .panel-body 
+              +randomQuote(quotesJokes)  
 
       .row
         h1 Testimonials
