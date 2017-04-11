@@ -33,4 +33,15 @@ router.get('/careers', function (req, res) {
   doc.render('careers.md', res)
 })
 
+router.get('/collaborative-learning', function (req, res) {
+  doc.render('friendlyteamenvironment.md', res)
+})
+
+router.get('/best-practices', function (req, res) {
+  doc.render('bestpractices.md', res)
+})
+
+router.get('/feedback', function (req, res) {
+  doc.render('feedback.md', res)
+})
 module.exports = router
